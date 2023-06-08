@@ -1,9 +1,411 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
+  <title>Drei Abmab || Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/hero.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/pro.css">
+  <link rel="stylesheet" href="./css/proAnimation.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/profe.css">
+  <link rel="stylesheet" href="./css/socialNav.css">
+</head>
 <body>
+  <div class="wrapper" id="wrapper">
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <nav id="nav">
+      <div class="ham" id="ham">
+        <div class="ham-container">
+          <span></span>
+        </div>
+      </div>
 
+      <div class="nav-container full-screen" id="nav-container">
+
+        <div class="logo">
+          <h1>Drei Abmab</h1>
+        </div>
+
+        <div class="nav">
+          <ul>
+            <li><a href="#about" id="about-link">About</a></li>
+            <li><a href="#project" id="projects-link">Projects</a></li>
+            <li><a href="#contact" id="contacts-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="social-nav" id="social-nav">
+      <ul>
+        <li><a href="mailto:dreiabmab@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a></li>
+        
+        <li><a href="https://www.linkedin.com/in/robert-a-b-3b56311ab/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a></li>
+
+        <li><a href="https://join.skype.com/invite/tCpVXNy1rkkI">
+          <i class="fa-brands fa-skype"></i>
+        </a></li>
+
+        <li><a href="https://github.com/Dreigannadoit">
+          <i class="fa-brands fa-github"></i>
+        </a></li>
+      </ul>
+    </div>
+    
+    <div class="profeciency-tab" id="profeciency-tab">
+      <div class="main-tab">
+        <h1>proficiency</h1>
+
+        <div class="prof">
+          <p>HTML</p>
+          <div class="prof-con-full">
+            <div class="prof-con html">90%</div>
+          </div>
+        </div>
+
+        <div class="prof">
+          <p>CSS</p>
+          <div class="prof-con-full">
+            <div class="prof-con css">90%</div>
+          </div>
+        </div>
+
+        <div class="prof">
+          <p>JAVASCRIPT</p>
+          <div class="prof-con-full">
+            <div class="prof-con js">85%</div>
+          </div>
+        </div>
+
+        <div class="prof">
+          <p>NODE.JS</p>
+          <div class="prof-con-full">
+            <div class="prof-con node">75%</div>
+          </div>
+        </div>
+
+        <div class="prof">
+          <p>PYTHON</p>
+          <div class="prof-con-full">
+            <div class="prof-con py">75%</div>
+          </div>
+        </div>
+        
+      </div>
+      <p>*Click any where to exit*</p>
+    </div>
+
+    <div class="content">
+      <section class="hero" id="hero">
+        <div class="bg"></div>
+
+        <div class="s-content">
+          <!-- <div class="name-text">
+            <h1>Robert Bamba</h1>
+            <h3>(But most people call me Drei Abmab)</h3>
+          </div> -->
+
+          <div class="main-text">
+            <h2>Website Development Made</h2>
+            <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+          </div>
+
+          <div class="skills-hero" id="skills-hero">
+            <div class="skills-img">
+              <img src="./img/hero/html-logo.png" alt="">
+              <img src="./img/hero/css.png" alt="">
+              <img src="./img/hero/js-logo.png" alt="">
+              <img src="./img/hero/node-js-logo.png" alt="">
+              <img src="./img/hero/python-logo.png" alt="">
+            </div>
+            <span>Click on one of the images</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="bg"></div>
+        <div class="s-content">
+          <div class="text s-a">
+            <div class="text-title">
+              <h1>mē selfum</h1>
+              <h6>(myslef)</h6>
+            </div>
+
+            <div class="text-para">
+              <p>Hey, I'm a self-taught website developer proficient in frontend and backend development. With 4 years of coding experience, I have gained expertise in HTML, CSS, JavaScript, Node.js, and Python. I specialize in creating visually appealing interfaces, implementing dynamic features, and integrating databases. As a collaborative team player, I consistently deliver high-quality results within deadlines. I am passionate about website development and constantly stay updated with industry trends. I am ready to exceed client expectations and contribute to organizational success.</p>
+              <p></p>
+
+              <a href="https://www.youtube.com/watch?v=88vi1ZVStvE">
+                <button>
+                  <svg viewBox="-4.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)" fill="#ffffff">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                          <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Download Resume</span>
+                </button>
+
+              </a>
+            </div>
+
+          </div>
+
+          <div class="img s-a">
+            <div class="img-con">
+              <img src="./img/about/hello_world.JPG" alt="">
+              <div class="pop-up">
+                <h2>Hello, World</h2>
+                <h1>I'm Robert Andrei "Drei Abmab" N. Bamba</h1>
+                
+              </div>
+            </div>
+
+            <div class="contact-links">
+              <ul>
+                <li><a href="#">
+                  <i class="fa-solid fa-envelope"></i>
+                </a></li>
+                
+                <li><a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a></li>
+        
+                <li><a href="#">
+                  <i class="fa-brands fa-skype"></i>
+                </a></li>
+        
+                <li><a href="#">
+                  <i class="fa-brands fa-github"></i>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="project">
+
+        <div class="s-content">
+          <h1>Completed Projects</h1>
+
+          <div class="gallery-sec">
+            <div class="colunm">
+
+              <div class="link-con li-5 hidden">
+                <a href="file:///D:/programming/html,%20css,%20js%20-%20Wedsites/school_project/31-40/34-mil-mini-pt/MIL-Mini%20PT/index.html#" target="_blank">
+                  <div class="imgs">
+                    <img src="./img/projects/5.5-cyberGrooming/hero.JPG" alt="">
+                  </div>
+  
+                  <div class="dis">
+                    <h1>Combating cyber-grooming website</h1>
+                    <br>
+                    <h2><i>04/2023 - 04/2023</i></h2>
+                  </div>
+                </a>
+              </div>
+
+              <div class="link-con li-3 hidden">
+                <a href="https://dreigannadoit.github.io/IceCreamProject.github.io/" target="_blank">
+                  <div class="imgs">
+                    <img src="./img/projects/3-icecream/hero.JPG" alt="">
+                  </div>
+  
+                  <div class="dis">
+                    <h1>Ice Cream Company Landing Page Concept Website Design</h1>
+                    <br>
+                    <h2><i>08/2021 - 10/2021</i></h2>
+                  </div>
+                </a>
+              </div>
+
+              <div class="link-con li-1 hidden">
+                <a href="https://dreigannadoit.github.io/OurPhilisophy.github.io/" target="_blank">
+                  <div class="imgs">
+                    <img src="./img/projects/1-ourPhilosophy/1-hero.JPG" alt="">
+                  </div>
+  
+                  <div class="dis">
+                    <h1>Our Philosophy - A Passion Project</h1>
+                    <br>
+                    <h2><i>01/2021 - 03/2021</i></h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="colunm">
+
+              <div class="link-con li-4 hidden">
+                <a href="https://dreigannadoit.github.io/madeeasy.github.io/Pages/header-page.html" target="_blank">
+                  <div class="imgs">
+                    <img src="./img/projects/5-madeEasy/1.jpg" alt="">
+                  </div>
+  
+                  <div class="dis">
+                    <h1>Made Easy - A Digital Learning Platform Business Concept project</h1>
+                    <br>
+                    <h2><i>10/2022 - 12/2022</i></h2>
+                  </div>
+                </a>
+              </div>
+
+              <div class="link-con li-2 hidden">
+                <a href="https://dreigannadoit.github.io/madeeasy.github.io/Pages/header-page.html" target="_blank">
+                  <div class="imgs">
+                    <img src="./img/projects/2-music/homepage.JPG" alt="">
+                  </div>
+  
+                  <div class="dis">
+                    <h1>A Modern Music Education Program Landing Page Concept</h1>
+                    <br>
+                    <h2><i>05/2021 - 05/2021</i></h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="s-contact">
+          <div class="c-side-links">
+            <h1>Contact Me</h1>
+
+            <div class="info-contacts ">
+              <div class="email info-con">
+                <div class="top">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>Email:</p>
+                </div>
+  
+                <p>dreiabmab@gmail.com</p>
+              </div>
+  
+              <div class="phone info-con">
+                <div class="top">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>Phone No.:</p>
+                </div>
+  
+                <p>+63-960-359-5313</p>
+              </div>
+  
+              <div class="location info-con">
+                <div class="top">
+                  <i class="fa-sharp fa-solid fa-location-crosshairs"></i>
+                  <p>Location:</p>
+                </div>
+  
+                <p>Iligan City, Lano Del Norte,Philippines</p>
+              </div>
+
+              <div class="contact-socials info-con">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/robert-a-b-3b56311ab/">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a></li>
+          
+                  <li><a href="https://join.skype.com/invite/tCpVXNy1rkkI">
+                    <i class="fa-brands fa-skype"></i>
+                  </a></li>
+          
+                  <li><a href="https://github.com/Dreigannadoit">
+                    <i class="fa-brands fa-github"></i>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="email">
+            <div class="email-container"> 
+              <div class="top">
+                <h1>Send me an Email</h1>
+                <p>Contact me about anything regarding my field and I will respond as quick as possible.</p>
+
+              </div>
+
+              <form class="row g-3" action="https://formsubmit.co/773f3433497a64d7d7b8d79e0c35b7db" method="POST">
+
+                <!-- HoneyPot -->
+                <input type="text" name="_honey" style="display: none;">
+      
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+      
+                <input type="hidden" name="_next" value="https://dreigannadoit.github.io/">
+      
+                <div class="name-con smae-con">
+                  <div class="firstName-con n-con">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="Name" id="firstName" required>
+                  </div>
+        
+                  <div class="lastName-con n-con">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
+                  </div>
+                </div>
+                
+                <div class="contact-con smae-con">
+                  <div class="email-con n-con">
+                    <label for="emailInfo" class="form-label">E-mail</label>
+                    <input type="email" class="form-control"  name="Email" id="emailInfo" required>
+                  </div>
+        
+                  <div class="phone-con n-con">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" name="Phone" id="phoneNumber" placeholder="+1 (415) 867-5309">
+                  </div>
+        
+                </div>
+                
+                <div class="comments-con">
+                  <label for="comments" class="form-label">Comments, questions?</label>
+                  <textarea class="form-control" id="comments" name="Comments,&nbsp;Questions" rows="3" required></textarea>
+                </div>
+      
+                <button type="submit" class="btn btn-primary">Submit</button>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <script src="./js/socialLinks.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/profe.js" defer></script>
+  <script src="./js/scrollAnimation.js" defer></script>
 </body>
 </html>

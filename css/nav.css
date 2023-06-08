@@ -1,0 +1,272 @@
+nav {
+  position: fixed;
+  top: 5%;
+  left: 0%;
+  z-index: 99999;
+  height: 15%;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0) 0px 5px 15px;
+  font-family: var(--font-fam-header);
+  transition: all 0.7s 0s ease-in-out;
+}
+
+nav .nav-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0%;
+}
+
+nav .nav-container .logo h1 {
+  font-weight: 800;
+}
+
+nav .nav-container .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+nav .nav-container .nav ul li a {
+  font-family: var(--font-fam-header-second);
+  position: relative;
+  font-size: 18px;
+}
+
+nav .nav-container .nav ul li a::before {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 15%;
+  width: 50%;
+  background: var(--bg-color-main);
+
+  padding: 0px;
+  z-index: -1;
+  transition:
+    width 400ms 00ms ease-in-out,
+    height 400ms 100ms ease-in-out,
+    padding 300ms 100ms ease-in-out,
+    top 400ms 550ms ease-in-out;
+}
+
+nav .nav-container .nav ul li a:hover:before {
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  transition:
+    width 200ms 350ms ease-in-out,
+    height 200ms 100ms ease-in-out,
+    padding 100ms 100ms ease-in-out,
+    top 200ms 0ms ease-in-out;
+}
+
+nav .nav-container .nav ul li a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background: var(--bg-color-secondary-invis);
+  backdrop-filter: blur(50px);
+  padding: 10px;
+  z-index: -999;
+  border-radius: 5px;
+  transition: 400ms 10ms ease-in-out;
+}
+
+
+
+
+/* When it is full screen */
+
+nav .nav-container.full-screen {
+  flex-direction: row;
+}
+
+nav .nav-container.full-screen .logo {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  padding: 0px 65px;
+  transition: 0.4s ease-in-out;
+}
+
+nav.scroll .nav-container.full-screen .logo {
+  width: 50%;
+}
+
+nav .nav-container.full-screen .logo h1 {
+  font-size: 40px;
+  margin-top: 5px;
+  color: aliceblue;
+  transition: 0.4s ease-in-out;
+}
+
+nav .nav-container.full-screen .nav {
+  position: relative;
+  height: 100%;
+  width: 45%;
+  transition: 0.4s ease-in-out;
+}
+
+nav.scroll .nav-container.full-screen .nav {
+  width: 50%;
+}
+
+nav .nav-container.full-screen .nav ul {
+  height: 100%;
+  width: 100%;
+  gap: 50px;
+  padding: 0 50px;
+}
+
+nav .nav-container.full-screen .nav ul li a {
+  color: var(--bg-color-secondary);
+}
+
+
+
+
+/* 
+I'll be honest, Idk know how the f"ck this works, it just does.
+It's a miracle that it works on what it is intended to do. 
+ */
+
+/* hamburger settings */
+/* nav.ham-active {
+  top: 0;
+  height: 100%;
+  width: 100%;
+} */
+
+nav.ham-active .ham {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  height: 50px;
+  width: 50px;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+nav.ham-active .ham .ham-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.ham-active .ham .ham-container span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10%;
+  width: 70%;
+  background: var(--bg-color-secondary);
+}
+
+nav.ham-active .ham .ham-container span::before {
+  content: "";
+  position: absolute;
+  top: -140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 110%;
+  width: 80%;
+  background: var(--bg-color-secondary);
+}
+
+nav.ham-active .ham .ham-container span::after {
+  content: "";
+  position: absolute;
+  bottom: -250%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 115%;
+  width: 80%;
+  background: var(--bg-color-secondary);
+}
+
+nav.ham-active .nav-container {
+  height: 100vh;
+  width: 100vw;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transform: translate(-100%, -5%);
+  background: var(--bg-color-secondary);
+  flex-direction: column;
+  gap: 5%;
+  transition: 0.2s;
+}
+
+nav.ham-active .nav-container.ham-nav-active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transform: translate(0%, -5%);
+  transition: 0.5s;
+}
+
+nav.ham-active .nav-container .logo h1 {
+  font-size: 50px;
+}
+
+nav.ham-active .nav-container .nav ul {
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav.ham-active .nav-container .nav ul li {
+  text-align: center;
+}
+
+nav.ham-active .nav-container .nav ul li a {
+  text-align: center;
+  color: black;
+}
+
+
+/* on scroll transition */
+
+nav.scroll {
+  top: 0;
+  height: 12%;
+  background: rgba(236, 236, 236, 0.8);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition:
+    top 0.2s 0.25s ease-in-out,
+    height 0.2s 0.2s ease-in-out,
+    background-color 0.2s 0.15s ease-in-out,
+    box-shadow 0.2s 0.1s ease-in-out,
+    transform 300ms 0s ease-in-out;
+}
+
+nav.scroll.hide-nav {
+  transform: translateY(-100%);
+}
+
+nav.scroll .nav-container .logo h1 {
+  color: black;
+}
+
+nav.scroll .nav-container.full-screen .nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}

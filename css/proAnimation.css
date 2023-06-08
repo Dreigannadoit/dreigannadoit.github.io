@@ -1,0 +1,195 @@
+.project .s-content .gallery-sec .colunm .link-con:hover {
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Link 5 */
+
+.project .s-content .gallery-sec .colunm .li-5:hover {
+  animation-name: li-5;
+}
+
+@keyframes li-5 {
+  0% {
+    background-image: url("../img/projects/5.5-cyberGrooming/hero.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 125%;
+  }
+
+  33% {
+    background-image: url("../img/projects/5.5-cyberGrooming/hero.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 125%;
+  }
+
+  33.1% {
+    background-image: url("../img/projects/5.5-cyberGrooming/tips.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 125%;
+  }
+
+  66% {
+    background-image: url("../img/projects/5.5-cyberGrooming/tips.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 125%;
+  }
+
+  66.1% {
+    background-image: url("../img/projects/5.5-cyberGrooming/download.JPG");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 125%;
+  }
+
+  100% {
+    background-image: url("../img/projects/5.5-cyberGrooming/download.JPG");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 125%;
+  }
+}
+
+/* Link 4 */
+
+.project .s-content .gallery-sec .colunm .li-4:hover {
+  animation-name: li-4;
+}
+
+@keyframes li-4 {
+  0% {
+    background-image: url("../img/projects/5-madeEasy/1.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 125%;
+  }
+
+  33% {
+    background-image: url("../img/projects/5-madeEasy/1.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 125%;
+  }
+
+  33.1% {
+    background-image: url("../img/projects/5-madeEasy/2.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 125%;
+  }
+
+  66% {
+    background-image: url("../img/projects/5-madeEasy/2.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 125%;
+  }
+
+  66.1% {
+    background-image: url("../img/projects/5-madeEasy/3.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 125%;
+  }
+
+  100% {
+    background-image: url("../img/projects/5-madeEasy/3.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 125%;
+  }
+}
+
+
+/* Link 3 */
+
+.project .s-content .gallery-sec .colunm .li-3:hover {
+  animation-name: li-3;
+}
+
+@keyframes li-3 {
+  0% {
+    background-image: url("../img/projects/3-icecream/hero.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 125%;
+  }
+
+  50% {
+    background-image: url("../img/projects/3-icecream/hero.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 125%;
+  }
+
+  50.1% {
+    background-image: url("../img/projects/3-icecream/card.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 125%;
+  }
+
+  100% {
+    background-image: url("../img/projects/3-icecream/card.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 125%;
+  }
+}
+
+/* Link 2 */
+
+
+
+/* Link 1 */
+.project .s-content .gallery-sec .colunm .li-1:hover {
+  animation-name: li-1;
+}
+
+@keyframes li-1 {
+  0% {
+    background-image: url("../img/projects/1-ourPhilosophy/1-hero.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 125%;
+  }
+
+  33% {
+    background-image: url("../img/projects/1-ourPhilosophy/1-hero.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 125%;
+  }
+
+  33.1% {
+    background-image: url("../img/projects/1-ourPhilosophy/about.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 125%;
+  }
+
+  66% {
+    background-image: url("../img/projects/1-ourPhilosophy/about.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 125%;
+  }
+
+  66.1% {
+    background-image: url("../img/projects/1-ourPhilosophy/nav.JPG");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 125%;
+  }
+
+  100% {
+    background-image: url("../img/projects/5-madeEasy/3.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 125%;
+  }
+}
