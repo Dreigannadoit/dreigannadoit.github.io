@@ -227,16 +227,15 @@
 .contact .c-content .send form .comments-con {
   height: 30%;
   width: 100%;
-  padding: 2%;
   display: flex;
   flex-direction: column;
 
 }
 
 .contact .c-content .send form .comments-con textarea {
-
   height: 100%;
   width: 100%;
+  padding: 2%;
 }
 
 .contact .c-content .send form label {
