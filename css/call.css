@@ -258,6 +258,7 @@
   background: var(--bg-button);
   border: none;
   color: var(--bg-color-secondary);
+  cursor: pointer;
 }
 
 
