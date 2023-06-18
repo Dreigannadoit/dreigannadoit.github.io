@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgba(23, 27, 39, 1);
+  --bg-color-transparent: rgba(4, 24, 63, 0.5);
+  --bg-color-secondary: rgb(240, 248, 255);
+  --bg-color-secondary-invis: rgba(240, 248, 255, 0.5);
+  --bg-color-main: rgba(0, 196, 255, 1);
+  --bg-color-main-gradient: linear-gradient(50deg, rgba(48, 162, 255, 1) 27%, rgba(0, 196, 255, 1) 63%);
+  ;
+  --font-color-secondary: rgb(80, 80, 80);
+  --bg-button: rgb(239, 94, 31);
+  --font-fam-header: 'Cormorant Garamond', serif;
+  --font-fam-header-second: 'Libre Baskerville', serif;
+  --font-fam-normalText: 'Wix Madefor Display', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  height: 100svh;
+  width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg-color);
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper>.content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.project,
+.contact {
+  background: var(--bg-color);
+}
+
+
+
+.screen-size {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 180px;
+  padding: 2%;
+  z-index: 99999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  background-color: var(--bg-color-secondary);
+  color: var(--bg-color-main);
+}

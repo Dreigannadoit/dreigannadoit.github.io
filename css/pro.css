@@ -1,0 +1,267 @@
+.project {
+  height: calc(290px * 3.4);
+  padding: 7% 7%;
+  padding-top: 12%;
+}
+
+.project>h1 {
+  text-align: center;
+  font-family: var(--font-fam-header);
+  font-size: 4rem;
+  color: var(--bg-color-secondary);
+
+}
+
+
+
+.project .p-content {
+  height: 100%;
+  width: 100%;
+
+  padding-top: 5%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  overflow: hidden;
+}
+
+
+
+.project .p-content .block-content {
+  position: relative;
+  width: 415px;
+  height: 290px;
+  cursor: pointer;
+  overflow: hidden;
+
+  opacity: 0;
+  filter: blur(20px);
+  transform: translateY(50%);
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 6px;
+
+  animation-name: none;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition:
+    all 400ms ease;
+}
+
+.project .p-content .block-content.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0%);
+
+}
+
+
+
+.project .p-content .block-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--bg-color-secondary);
+  opacity: 1;
+  clip-path: circle(0.0% at 0 100%);
+  z-index: 9;
+
+  transition:
+    all 400ms ease,
+    opacity 400ms 200ms ease;
+}
+
+.project .p-content .block-content:hover:before {
+  opacity: 0.5;
+  clip-path: circle(141.2% at 0 100%);
+
+}
+
+.project .p-content .block-content .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+
+  background: aliceblue;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  transition: all 1000ms ease;
+}
+
+.project .p-content .block-content:hover .front {
+  opacity: 0;
+}
+
+.project .p-content .p-1 .front {
+  background-image: url("../img/projects/1-ourPhilosophy/1.JPG");
+}
+
+.project .p-content .p-2 .front {
+  background-image: url("../img/projects/2-music/1.JPG");
+  background-position: left center;
+}
+
+.project .p-content .p-3 .front {
+  background-image: url("../img/projects/3-icecream/1.JPG");
+}
+
+.project .p-content .p-4 .front {
+  background-image: url("../img/projects/4-cyberGrooming/1.JPG");
+}
+
+.project .p-content .p-5 .front {
+  background-image: url("../img/projects/5-madeEasy/1.jpg");
+  background-position: left center;
+}
+
+
+
+.project .p-content .block-content .dis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: circle(0.3% at 0 100%);
+
+  background-image: radial-gradient(black 1px, var(--bg-color-secondary-invis) 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-end;
+  flex-direction: column;
+  z-index: 99;
+
+  text-decoration: none;
+
+  padding: 8% 9%;
+  transition:
+    all 400ms 0ms ease,
+    background-position 400ms 0ms ease;
+}
+
+.project .p-content .block-content:hover .dis {
+  clip-path: circle(141.2% at 0 100%);
+  background-position: -76px -19px;
+  transition:
+    all 400ms 0ms ease,
+    background-position 400ms 120ms ease;
+}
+
+.project .p-content .block-content .dis h1 {
+  font-family: var(--font-fam-header);
+  font-weight: 900;
+  font-size: 2.2rem;
+  line-height: 120%;
+  color: var(--bg-color);
+}
+
+.project .p-content .block-content .dis p {
+  font-family: var(--font-fam-normalText);
+  font-weight: 500;
+  color: var(--bg-color);
+
+  margin-top: 3%;
+}
+
+
+
+@media only screen and (max-width: 1540px) {
+  .project {
+    height: calc(290px * 5);
+  }
+
+  .project .p-content {
+    height: 100%;
+    width: 100%;
+
+    padding-top: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+}
+
+@media only screen and (max-width: 1040px) {
+  .project {
+    height: calc(290px * 7);
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .project {
+    height: calc(290px * 7);
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+  .project {
+    height: calc(290px * 7.4);
+  }
+
+  .project>h1 {
+    padding: 15% 9% 0 9%;
+  }
+
+  .project .p-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .project {
+    height: calc(290px * 7);
+    padding: 25% 0;
+  }
+
+  .project>h1 {
+    padding: 0 9%;
+  }
+
+  .project .p-content {
+    padding-top: 0%;
+    gap: 0;
+  }
+
+  .project .p-content .block-content {
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (max-height: 760px) {
+  .project {
+    height: calc(290px * 4);
+  }
+}

@@ -1,0 +1,254 @@
+.wrapper>.skill {
+  position: absolute;
+  z-index: 999999;
+  top: 50%;
+  right: 9%;
+  transform: translate(0%, -50%);
+  height: 80%;
+  width: 725px;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  display: block;
+  background: var(--bg-color-secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 1;
+  filter: blur(0px);
+
+  transition: all 500ms ease;
+}
+
+.wrapper>.skill.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.wrapper>.skill .p-content {
+  height: 100%;
+  width: 100%;
+  padding: 7% 9%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper>.skill .p-content .top {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--bg-color-main);
+}
+
+.wrapper>.skill .p-content .top h1 {
+  font-family: var(--font-fam-header);
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.wrapper>.skill .p-content .top i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.wrapper>.skill .p-content .skill-container {
+  height: 90%;
+  width: 100%;
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+}
+
+.wrapper>.skill .p-content .skill-container .prof {
+  height: 120px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.wrapper>.skill .p-content .skill-container .prof .logo {
+  height: 100%;
+  width: 23%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.wrapper>.skill .p-content .skill-container .prof .logo img {
+  width: 35%;
+}
+
+.wrapper>.skill .p-content .skill-container .prof .logo p {
+  font-size: 14px;
+}
+
+.wrapper>.skill .p-content .skill-container .prof .bar {
+  position: relative;
+  height: 55%;
+  width: 75%;
+  background-color: var(--font-color-secondary);
+
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.wrapper>.skill .p-content .skill-container .prof .bar::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-45%);
+  padding-right: 5%;
+  height: 110%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-size: 18px;
+
+  color: var(--bg-color-secondary);
+}
+
+.wrapper>.skill .p-content .skill-container .html .bar::after {
+  content: "90%";
+  width: 85%;
+  background-color: rgb(243, 107, 17);
+}
+
+.wrapper>.skill .p-content .skill-container .css .bar::after {
+  content: "90%";
+  width: 85%;
+  background-color: rgb(59, 179, 235);
+}
+
+.wrapper>.skill .p-content .skill-container .js .bar::after {
+  content: "85%";
+  width: 80%;
+  background-color: rgb(225, 200, 11);
+}
+
+.wrapper>.skill .p-content .skill-container .node .bar::after {
+  content: "75%";
+  width: 70%;
+  background-color: rgb(17, 190, 14);
+}
+
+.wrapper>.skill .p-content .skill-container .py .bar::after {
+  content: "75%";
+  width: 70%;
+  background: rgb(48, 162, 255);
+  background: linear-gradient(210deg, rgba(48, 162, 255, 1) 27%, rgba(228, 255, 0, 1) 67%);
+}
+
+@media only screen and (max-width: 1360px) {
+  .wrapper>.skill {
+    width: 590px;
+  }
+
+}
+
+@media only screen and (max-width: 1225px) {
+  .wrapper>.skill {
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 85%;
+  }
+
+
+
+  .wrapper>.skill .p-content .skill-container {
+    height: 90%;
+    width: 100%;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  .wrapper>.skill .p-content .skill-container .prof {
+    height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wrapper>.skill .p-content .skill-container .prof .logo {
+    height: 45%;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .wrapper>.skill .p-content .skill-container .prof .logo img {
+    width: 4%;
+  }
+
+  .wrapper>.skill .p-content .skill-container .prof .logo h1 {
+    font-size: 22px;
+  }
+
+  .wrapper>.skill .p-content .skill-container .prof .bar {
+    position: relative;
+    height: 40%;
+    width: 100%;
+
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .wrapper>.skill .p-content .skill-container .prof .logo img {
+    width: 7%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper>.skill .p-content .skill-container .prof .bar {
+    height: 45%;
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+  .wrapper>.skill {
+    width: 85%;
+  }
+
+  .wrapper>.skill.active {
+    transform: translate(50%, -50%);
+
+  }
+
+  .wrapper>.skill .p-content .top h1 {
+    font-size: 35px;
+  }
+
+  .wrapper>.skill {
+    width: 80%;
+  }
+
+  .wrapper>.skill .p-content .skill-container .prof .logo img {
+    width: 14%;
+  }
+
+  .wrapper>.skill .p-content .skill-container .prof .bar {
+    height: 35%;
+  }
+}

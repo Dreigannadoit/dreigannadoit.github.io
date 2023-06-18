@@ -1,0 +1,267 @@
+/* Animate on scroll */
+
+.project .p-content .p-5.show {
+  transition-delay: 0ms;
+}
+
+.project .p-content .p-4.show {
+  transition-delay: 150ms;
+}
+
+.project .p-content .p-3.show {
+  transition-delay: 300ms;
+}
+
+.project .p-content .p-2.show {
+  transition-delay: 150ms;
+}
+
+.project .p-content .p-1.show {
+  transition-delay: 0ms;
+}
+
+
+
+
+/* Animate on hover */
+
+
+/* link - 5 */
+.project .p-content .p-5:hover {
+  animation-name: p-5;
+}
+
+@keyframes p-5 {
+  0% {
+    background-image: url("../img/projects/5-madeEasy/1.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+
+  33% {
+    background-image: url("../img/projects/5-madeEasy/1.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  33.1% {
+    background-image: url("../img/projects/5-madeEasy/2.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  66% {
+    background-image: url("../img/projects/5-madeEasy/2.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+
+  66.1% {
+    background-image: url("../img/projects/5-madeEasy/3.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 190%;
+  }
+
+  100% {
+    background-image: url("../img/projects/5-madeEasy/3.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 190%;
+  }
+}
+
+
+
+
+/* link - 4 */
+.project .p-content .p-4:hover {
+  animation-name: p-4;
+}
+
+@keyframes p-4 {
+  0% {
+    background-image: url("../img/projects/4-cyberGrooming/1.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+
+  33% {
+    background-image: url("../img/projects/4-cyberGrooming/1.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  33.1% {
+    background-image: url("../img/projects/4-cyberGrooming/2.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  66% {
+    background-image: url("../img/projects/4-cyberGrooming/2.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+
+  66.1% {
+    background-image: url("../img/projects/4-cyberGrooming/3.JPG");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 190%;
+  }
+
+  100% {
+    background-image: url("../img/projects/4-cyberGrooming/3.JPG");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 190%;
+  }
+}
+
+
+
+/* link - 3 */
+.project .p-content .p-3:hover {
+  animation-name: p-3;
+}
+
+@keyframes p-3 {
+  0% {
+    background-image: url("../img/projects/3-icecream/1.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+
+  50% {
+    background-image: url("../img/projects/3-icecream/1.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  50.1% {
+    background-image: url("../img/projects/3-icecream/2.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  100% {
+    background-image: url("../img/projects/3-icecream/2.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+}
+
+
+
+/* link - 2 */
+.project .p-content .p-2:hover {
+  animation-name: p-2;
+}
+
+@keyframes p-2 {
+  0% {
+    background-image: url("../img/projects/2-music/1.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+
+  33% {
+    background-image: url("../img/projects/2-music/1.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  33.1% {
+    background-image: url("../img/projects/2-music/2.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  66% {
+    background-image: url("../img/projects/2-music/2.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+
+  66.1% {
+    background-image: url("../img/projects/2-music/3.JPG");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 190%;
+  }
+
+  100% {
+    background-image: url("../img/projects/2-music/3.JPG");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 190%;
+  }
+}
+
+
+
+/* link - 1 */
+.project .p-content .p-1:hover {
+  animation-name: p-1;
+}
+
+@keyframes p-1 {
+  0% {
+    background-image: url("../img/projects/1-ourPhilosophy/1.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+
+  33% {
+    background-image: url("../img/projects/1-ourPhilosophy/1.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  33.1% {
+    background-image: url("../img/projects/1-ourPhilosophy/2.JPG");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 190%;
+  }
+
+  66% {
+    background-image: url("../img/projects/1-ourPhilosophy/2.JPG");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 190%;
+  }
+
+  66.1% {
+    background-image: url("../img/projects/1-ourPhilosophy/3.JPG");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 190%;
+  }
+
+  100% {
+    background-image: url("../img/projects/1-ourPhilosophy/3.JPG");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 190%;
+  }
+}
