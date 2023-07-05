@@ -1,0 +1,265 @@
+.rvu {
+  height: 90%;
+  background: var(--bg-blue-color);
+}
+
+.rvu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0;
+}
+
+.rvu-content .title {
+  height: 15%;
+  width: 100%;
+  padding: 0 7%;
+}
+
+.rvu-content .title h1 {
+  font-family: var(--font-fam-header);
+  font-size: 2.5rem;
+
+  color: var(--side-blue-color);
+}
+
+.rvu-content .slide-con {
+  position: relative;
+  height: 55%;
+  width: 100%;
+
+}
+
+.rvu-content .slide-con .slider-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0% 7%;
+}
+
+.rvu-content .slide-con .slider-container .swiper-button-prev {
+  top: 125%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.rvu-content .slide-con .slider-container .swiper-button-next {
+  top: 125%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.rvu-content .slide-con .slider-container .swiper-button-prev:after {
+  display: none
+}
+
+.rvu-content .slide-con .slider-container .swiper-button-next:after {
+  display: none
+}
+
+
+
+.rvu-content .slide-con .slider-container .swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+
+}
+
+.rvu-content .slide-con .slider-container .swiper .swiper-slide {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+/* thw slide content */
+.rvu-content .slide-con .slider-container .swiper .swiper-slide .slide {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 7% 7% 14% 7%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.rvu-content .slide-con .slider-container .swiper .swiper-slide .slide::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  height: 50%;
+  width: 50%;
+  background-image: url(../img/testimonial/quote.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  font-size: 10rem;
+  font-family: var(--font-fam-secondary);
+  color: var(--contrast-blue-color);
+  z-index: -1;
+  opacity: 0.45;
+}
+
+.rvu-content .slide .top {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rvu-content .slide .top .guest {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2%;
+}
+
+.rvu-content .slide .top .guest img {
+  height: 65px;
+  width: 65px;
+  border-radius: 1000px;
+  object-fit: cover;
+}
+
+.rvu-content .slide .top .guest .details {
+  line-height: 120%;
+}
+
+.rvu-content .slide .top .guest .details h1 {
+  font-family: var(--font-fam-header);
+  font-size: 16px;
+}
+
+.rvu-content .slide .top .guest .details p {
+  font-family: var(--font-fam-secondary);
+  font-size: 12px;
+}
+
+.rvu-content .slide .top .rating {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10%;
+}
+
+.rvu-content .swiper-slide:nth-child(1) .slide .top .rating {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10%;
+}
+
+/* default logo size */
+.rvu-content .slide .top .rating img:nth-child(1) {
+  height: 50%;
+}
+
+
+/* facebook rating */
+.rvu-content .swiper-slide:nth-child(1) .slide .top .rating img {
+  height: 30%;
+}
+
+
+/* agoda logo size */
+.rvu-content .swiper-slide:nth-child(6) .slide .top .rating img:nth-child(1),
+.rvu-content .swiper-slide:nth-child(7) .slide .top .rating img:nth-child(1) {
+  height: 40%;
+  width: 80%;
+}
+
+
+
+/* default rating size */
+.rvu-content .slide .top .rating img:nth-child(2) {
+  height: 30%;
+}
+
+.rvu-content .slide .top .rating h1 {
+  font-size: 20px;
+  font-family: var(--font-fam-secondary);
+}
+
+.rvu-content .slide .top .rating h1 span {
+  font-size: 16px;
+  color: rgb(114, 114, 114);
+}
+
+.rvu-content .slide .bottom {
+  height: 70%;
+  width: 100%;
+  padding: 5% 0;
+  font-family: var(--font-fam-secondary);
+}
+
+.rvu-content .slide .bottom h1 {
+  font-size: 18px;
+
+}
+
+.rvu-content .slide .bottom p {
+  font-size: 13px;
+}
+
+@media only screen and (max-height: 750px) {
+  .rvu {
+    height: 115%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .rvu {
+    height: 145%;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .rvu {
+    height: 165%;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .rvu {
+    height: 195%;
+  }
+}
+
+@media only screen and (max-height: 320px) {
+  .rvu {
+    height: 225%;
+  }
+}
+
+@media only screen and (max-height: 280px) {
+  .rvu {
+    height: 265%;
+  }
+}
+
+/* 
+Code made by Robert Bamba 
+https://github.com/Dreigannadoit
+*/

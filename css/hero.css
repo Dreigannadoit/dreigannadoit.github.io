@@ -1,296 +1,329 @@
+.hero {
+  /* background-image: linear-gradient(-210deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%), url(../img/hero/bg-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; */
+
+  background: var(--bg-blue-color);
+}
+
+
+
+/* bg content */
 .hero .bg {
   position: absolute;
-  width: 100%;
-  height: 380%;
-  background-image: linear-gradient(160deg, rgba(48, 162, 255, 1) 20%, rgba(0, 196, 255, 1) 32%, rgba(255, 231, 160, 1) 51%, rgba(255, 245, 184, 1) 95%);
-  background-size: 500% 100%;
-  -webkit-mask-position: 5% 900px;
-
-  z-index: -99999;
-
-  -webkit-mask-image: url(../img/hero/hero-blobs.svg);
-  -webkit-mask-size: 170% 6500px;
-  -webkit-mask-position: 5% 50px;
-  -webkit-mask-mode: luminance;
-  -webkit-mask-repeat: no-repeat;
-
-  mask-image: url(../img/hero/hero-blobs.svg);
-  mask-size: 170% 6500px;
-  mask-position: 5% 50px;
-  mask-mode: luminance;
-  mask-repeat: no-repeat;
-
-  animation:
-    bg 120s 0s linear infinite,
-    bg-bg 12s linear infinite;
-}
-
-@keyframes bg {
-  0% {
-    -webkit-mask-position: 5% 900px;
-    mask-position: 5% 900px;
-    opacity: 1;
-  }
-
-  5% {
-    -webkit-mask-position: 5% 100px;
-    mask-position: 5% 100px;
-  }
-
-  100% {
-    -webkit-mask-position: 5% -6500px;
-    mask-position: 5% -6500px;
-    opacity: 1;
-  }
-}
-
-@keyframes bg-bg {
-  0% {
-    background-position: 10% 10%;
-  }
-
-  25% {
-    background-position: 40% 70%;
-  }
-
-  50% {
-    background-position: 70% 90%;
-  }
-
-  75% {
-    background-position: 40% 70%;
-  }
-
-  100% {
-    background-position: 10% 10%;
-  }
-}
-
-
-.hero .h-content {
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  padding: 9%;
+  overflow: hidden;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 50px;
+.hero .bg .mySlides {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-attachment: fixed;
 }
 
 
-.hero .h-content .main-text {
-  height: 30%;
-  width: 80%;
+.hero .bg .mySlides:nth-child(1) {
+  background-image: linear-gradient(-210deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%), url(../img/hero/bg-1.png);
 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  animation: fade 1000ms, a-1 24000ms linear infinite;
 }
 
-.hero .h-content .main-text h2 {
-  font-family: var(--font-fam-normalText);
-  font-weight: 400;
-  font-size: 45px;
-  color: var(--bg-color-secondary);
-  text-transform: capitalize;
-}
-
-.hero .h-content .main-text h1 {
-  font-family: var(--font-fam-header);
-  font-weight: 800;
-  font-size: 105px;
-  color: var(--bg-color-main);
-  text-transform: capitalize;
-  text-shadow: -1px 1px 6px rgba(5, 8, 31, 1);
-
-}
-
-.hero .h-content .main-text h1 span.cursor {
-  display: inline-block;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
+@keyframes a-1 {
   0% {
-    background-color: #ccc;
-  }
-
-  49% {
-    background-color: #ccc;
-  }
-
-  50% {
-    background-color: transparent;
-  }
-
-  99% {
-    background-color: transparent;
+    background-position: center center;
   }
 
   100% {
-    background-color: #ccc;
+    background-position: left top;
+  }
+}
+
+.hero .bg .mySlides:nth-child(2) {
+  background-image: linear-gradient(-210deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%), url(../img/hero/bg-2.jpg);
+
+  animation: fade 1000ms, a-2 24000ms linear infinite;
+}
+
+@keyframes a-2 {
+  0% {
+    background-position: center center;
+  }
+
+  100% {
+    background-position: right top;
+  }
+}
+
+.hero .bg .mySlides:nth-child(3) {
+  background-image: linear-gradient(-210deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../img/hero/bg-3.png);
+
+  animation: fade 1000ms, a-3 34000ms linear infinite;
+}
+
+@keyframes a-3 {
+  0% {
+    background-position: center center;
+  }
+
+  100% {
+    background-position: left top;
+  }
+}
+
+.hero .bg .mySlides:nth-child(4) {
+  background-image: linear-gradient(-210deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(../img/hero/bg-4.png);
+
+  animation: fade 1000ms, a-4 34000ms linear infinite;
+}
+
+@keyframes a-4 {
+  0% {
+    background-position: center center;
+  }
+
+  100% {
+    background-position: right top;
+  }
+}
+
+.hero .bg .mySlides:nth-child(5) {
+  background-image: linear-gradient(-210deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 100%), url(../img/hero/bg-5.png);
+
+  animation: fade 1000ms, a-5 24000ms linear infinite;
+}
+
+@keyframes a-5 {
+  0% {
+    background-position: center center;
+  }
+
+  100% {
+    background-position: left bottom;
   }
 }
 
 
+@keyframes fade {
+  0% {
+    opacity: .7
+  }
 
-.hero .h-content .skills-info {
-  height: 10%;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 20px;
+  100% {
+    opacity: 1
+  }
 }
 
-.hero .h-content .skills-info .skills-img {
-  height: 100%;
-  width: 100%;
+
+.hero .bg .dot-con {
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translateY(-50%);
+
+  height: 200px;
+  width: 25px;
+
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 4%;
+  gap: 10px;
 }
 
-.hero .h-content .skills-info .skills-img i {
-  font-size: 50px;
-  color: var(--bg-color-secondary);
+.hero .bg .dot-con .dot {
+  height: 25px;
+  width: 25px;
+  background: transparent;
+  border-radius: 100%;
+  border: var(--highlight-blue-color) solid 5px;
+  transition: all 100ms ease;
 
-  cursor: pointer;
-  transition: all 5000ms 50ms ease;
 }
 
-.hero .h-content .skills-info .skills-img i:hover {
-  color: var(--bg-button);
-  transition: all 200ms 0ms ease;
-}
-
-.hero .h-content .skills-info p {
-  opacity: 1;
-  filter: blur(0);
-  color: var(--bg-color-secondary);
-  font-family: var(--font-fam-normalText);
-
-  transition: all 700ms 0s ease;
-}
-
-.hero .h-content .skills-info.active p {
-  filter: blur(20px);
-  opacity: 0;
+.hero .bg .dot-con .dot.active {
+  background: var(--highlight-blue-color);
+  border: var(--highlight-blue-color) solid 5px;
 }
 
 
 
-@media only screen and (max-width: 850px) {
-  @keyframes bg {
-    0% {
-      -webkit-mask-position: 5% 900px;
-      mask-position: 5% 900px;
-      opacity: 1;
-    }
 
-    5% {
-      -webkit-mask-position: 5% -100px;
-      mask-position: 5% -100px;
-    }
+/* main hero content */
+.hero .h-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 
-    100% {
-      -webkit-mask-position: 5% -6500px;
-      mask-position: 5% -6500px;
-      opacity: 1;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-fam-secondary);
+}
+
+.hero .h-content h1 {
+  font-family: var(--font-fam-header);
+  font-size: 2.2rem;
+  margin-bottom: 2%;
+  color: #fff;
+  text-align: center;
+}
+
+.hero .h-content img {
+  height: 100px;
+}
+
+.hero .h-content h2 {
+  color: var(--highlight-blue-color);
+  font-size: 1.2rem;
+}
+
+.hero .h-content p {
+  color: var(--bg-blue-color);
+  margin-top: 1%;
+}
+
+
+@media only screen and (max-width: 1350px) {
+  .hero .bg .mySlides:nth-child(1) {
+    background-size: 125%;
   }
 
-  .hero .h-content .main-text {
-    height: 30%;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    text-align: center;
+  .hero .bg .mySlides:nth-child(2) {
+    background-size: 115%;
   }
 
-  .hero .h-content .main-text h1 {
-    background: var(--bg-color-secondary-trans);
-    padding: 2%;
+  .hero .bg .mySlides:nth-child(5) {
+    background-size: 125%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero .bg .mySlides:nth-child(1) {
+    background-size: 145%;
   }
 
-  .hero .h-content .skills-info {
-    height: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .hero .bg .mySlides:nth-child(5) {
+    background-size: 145%;
+  }
+}
 
+@media only screen and (max-width: 1000px) {
+  .hero .bg .mySlides:nth-child(1) {
+    background-size: 165%;
   }
 
-  .hero .h-content .skills-info .skills-img {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 4%;
+  .hero .bg .mySlides:nth-child(2) {
+    background-size: 115%;
+  }
+
+  .hero .bg .mySlides:nth-child(5) {
+    background-size: 165%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero .bg .mySlides:nth-child(1) {
+    background-size: 195%;
+  }
+
+  .hero .bg .mySlides:nth-child(2) {
+    background-size: 145%;
+  }
+
+  .hero .bg .mySlides:nth-child(5) {
+    background-size: 195%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hero .bg .mySlides:nth-child(1) {
+    background-size: 245%;
+  }
+
+  .hero .bg .mySlides:nth-child(2) {
+    background-size: 195%;
+  }
+
+  .hero .bg .mySlides:nth-child(5) {
+    background-size: 225%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .hero .h-content .main-text {
+  .hero .bg .mySlides:nth-child(1) {
+    background-size: 345%;
+  }
+
+  .hero .bg .mySlides:nth-child(2) {
+    background-size: 235%;
+  }
+
+  .hero .bg .mySlides:nth-child(3) {
+    background-size: 155%;
+  }
+
+  .hero .bg .mySlides:nth-child(4) {
+    background-size: 155%;
+  }
+
+  .hero .bg .mySlides:nth-child(5) {
+    background-size: 295%;
+  }
+
+  .hero .bg .dot-con {
+    position: absolute;
+    top: 75%;
+    right: 50%;
+    transform: translate(50%, 50%);
+
+    height: 25px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
   }
+}
 
-  .hero .h-content .main-text h2 {
-    font-size: 20px;
+
+
+
+@media only screen and (max-height: 950px) and (max-width: 580px) {
+  .hero .bg .mySlides:nth-child(1) {
+    background-size: 445%;
   }
 
-  .hero .h-content .main-text h1 {
-    font-size: 60px;
+  .hero .bg .mySlides:nth-child(2) {
+    background-size: 335%;
+  }
 
+  .hero .bg .mySlides:nth-child(3) {
+    background-size: 255%;
+  }
+
+  .hero .bg .mySlides:nth-child(4) {
+    background-size: 255%;
+  }
+
+  .hero .bg .mySlides:nth-child(5) {
+    background-size: 395%;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .hero .h-content .main-text {
-    gap: 10px;
-  }
-
-  .hero .h-content .main-text h2 {
-    font-size: 20px;
-    background: var(--bg-color-secondary-trans);
-    padding: 2%;
-  }
-
-  .hero .h-content .main-text h1 {
-    font-size: 65px;
-
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .hero .h-content .skills-info .skills-img {
-    gap: 9%;
-  }
-
-  .hero .h-content .skills-info .skills-img i {
-    font-size: 40px;
-  }
-
-  .hero .h-content .main-text h1 {
-    font-size: 40px;
-
-  }
-
-}
+/* 
+Code made by Robert Bamba 
+https://github.com/Dreigannadoit
+*/

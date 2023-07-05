@@ -1,10 +1,10 @@
+console.log("AAAAAAAHHHHHH!!!!! WHY ARE YOU LOOKING HERE???!!!!");
+
+const body = document.getElementById("body");
+
 const nav = document.getElementById("nav");
-const navHam = document.getElementById("nav-ham");
-const navHamContent = document.getElementById("nav-ham-content");
 
-// handles navigation
-prevScrollpos = window.pageYOffset;
-
+var prevScrollpos = window.pageYOffset; // tf, this declares false? but it still works?
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
 
@@ -31,8 +31,10 @@ window.onscroll = function () {
 }
 
 
+// open hamburger function
+const navHam = document.getElementById("nav-ham");
+const navHamContent = document.getElementById("nav-ham-active");
 
-// handles when the user clicks the hamburger
 navHam.addEventListener("click", openNav);
 
 function openNav() {
@@ -41,68 +43,109 @@ function openNav() {
 }
 
 
+// header slide show background
+let slideIndex = 0;
+showSlides();
 
-const skillsTabOpen = document.getElementById("skills-info");
-const skillsTabExit = document.getElementById("skillsTabExit");
-const skillsTab = document.getElementById("skill");
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
 
-// handles skill section
-skillsTabOpen.addEventListener("click", openProfeTab);
-skillsTabExit.addEventListener("click", openProfeTab);
 
-function openProfeTab() {
-  skillsTabOpen.classList.add("active")
-  skillsTab.classList.toggle("active")
+// open full facilities list function
+const facButton = document.getElementById("fac-button");
+const fasFullList = document.getElementById("fas-full-list");
+
+
+facButton.addEventListener("click", openList);
+
+function openList() {
+  fasFullList.classList.toggle("active")
 }
 
 
 
-// type writter
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+// open full gallery list function
 
-const textArray = ['affordable', 'made fast', 'Creative', 'elegant ', 'interactive', 'Eye catching'];
-const typingDelay = 200;
-const erasingDelay = 100;
-const newTextDelay = 800; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
+const galBtn = document.getElementById("gal-btn");
+const galFull = document.getElementById("full-gal");
+const galExit = document.getElementById("close-gal-btn");
 
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+galBtn.addEventListener("click", openGal);
+galExit.addEventListener("click", openGal);
 
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-
-    charIndex++;
-    setTimeout(type, typingDelay);
-  }
-
-  else {
-    cursorSpan.classList.remove("typing");
-    setTimeout(erase, newTextDelay);
-  }
+function openGal() {
+  galFull.classList.toggle("active")
+  body.classList.toggle("active")
 }
 
-function erase() {
-  if (charIndex > 0) {
-    if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
 
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
 
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  }
-  else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
+// accordian
+const accBlock1 = document.getElementById("block-1");
+const accBlock2 = document.getElementById("block-2");
+const accBlock3 = document.getElementById("block-3");
+const accBlock4 = document.getElementById("block-4");
+const accBlock5 = document.getElementById("block-5");
 
-    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+accBlock1.addEventListener("click", openBlockOne);
+accBlock2.addEventListener("click", openBlockTwo);
+accBlock3.addEventListener("click", openBlockThree);
+accBlock4.addEventListener("click", openBlockFour);
+accBlock5.addEventListener("click", openBlockFive);
 
-    setTimeout(type, typingDelay + 1100);
-  }
+function openBlockOne() {
+  accBlock1.classList.toggle("active")
+  accBlock2.classList.remove("active")
+  accBlock3.classList.remove("active")
+  accBlock4.classList.remove("active")
+  accBlock5.classList.remove("active")
 }
 
-document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
-  if (textArray.length) setTimeout(type, newTextDelay + 250);
-});
+function openBlockTwo() {
+  accBlock1.classList.remove("active")
+  accBlock2.classList.toggle("active")
+  accBlock3.classList.remove("active")
+  accBlock4.classList.remove("active")
+  accBlock5.classList.remove("active")
+}
+
+function openBlockThree() {
+  accBlock1.classList.remove("active")
+  accBlock2.classList.remove("active")
+  accBlock3.classList.toggle("active")
+  accBlock4.classList.remove("active")
+  accBlock5.classList.remove("active")
+}
+
+function openBlockFour() {
+  accBlock1.classList.remove("active")
+  accBlock2.classList.remove("active")
+  accBlock3.classList.remove("active")
+  accBlock4.classList.toggle("active")
+  accBlock5.classList.remove("active")
+}
+
+function openBlockFive() {
+  accBlock1.classList.remove("active")
+  accBlock2.classList.remove("active")
+  accBlock3.classList.remove("active")
+  accBlock4.classList.remove("active")
+  accBlock5.classList.toggle("active")
+}
+
+// Code made by Robert Bamba
+// https://github.com/Dreigannadoit

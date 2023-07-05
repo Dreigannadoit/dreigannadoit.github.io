@@ -1,0 +1,133 @@
+.rul {
+  height: 105%;
+  background: #fff;
+}
+
+.rul .rul-content {
+  height: 100%;
+  width: 100%;
+  padding: 7% 7% 7% 7%;
+}
+
+.rul .rul-content .tiltle {
+  height: 20%;
+  width: 100%;
+  color: var(--side-blue-color);
+
+  display: flex;
+  align-items: center;
+}
+
+.rul .rul-content .tiltle h1 {
+  font-family: var(--font-fam-header);
+  font-size: 2.5rem;
+}
+
+.rul .rul-content .rules-content {
+  height: 80%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rul .rul-content .rules-content .r-con {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rul .rul-content .rules-content .r-con .r-wrap {
+  width: 97%;
+  padding: 3% 3%;
+
+  border-top: 2px solid #000;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rul .rul-content .rules-content .r-con .r-wrap.r-5 {
+  border-bottom: 2px solid #000;
+}
+
+.rul .rul-content .rules-content .r-con .r-wrap .icon {
+  height: 100%;
+  width: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rul .rul-content .rules-content .r-con .r-wrap .icon img {
+  height: 20px;
+}
+
+.rul .rul-content .rules-content .r-con .r-wrap .disc {
+  height: 100%;
+  width: 90%;
+  font-family: var(--font-fam-secondary);
+
+  overflow-wrap: break-word;
+}
+
+.rul .rul-content .rules-content .r-con .r-wrap .disc p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rul .rul-content .rules-content .r-con .r-wrap .disc span {
+  font-size: 12px;
+}
+
+
+
+
+.rul .rul-content .rules-content .r-right {
+  align-items: flex-end;
+}
+
+
+@media only screen and (max-height: 745px) {
+  .rul {
+    height: 115%;
+    background: #fff;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .rul {
+    height: 150%;
+    background: #fff;
+  }
+
+  .rul .rul-content .rules-content .r-con {
+    height: 50%;
+    width: 100%;
+  }
+
+  .rul .rul-content .rules-content .r-con .r-wrap {
+    width: 100%;
+    padding: 3% 3%;
+
+    border-top: 2px solid #000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  .rul .rul-content .rules-content .r-con .r-wrap.r-5 {
+    border-bottom: none;
+  }
+}
+
+/* 
+Code made by Robert Bamba 
+https://github.com/Dreigannadoit
+*/

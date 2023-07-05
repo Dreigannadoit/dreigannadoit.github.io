@@ -1,0 +1,442 @@
+/* 
+Code made by Robert Bamba 
+https://github.com/Dreigannadoit
+*/
+
+.con {
+  height: 100%;
+  background: #fff;
+  padding: 0 7%;
+}
+
+.con .con-content {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.con .con-content .request {
+  height: 60%;
+  width: 55%;
+  padding-right: 5%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.con .con-content .request .header {
+  height: 30%;
+  width: 100%;
+}
+
+.con .con-content .request .header h2 {
+  font-size: 1rem;
+  font-family: var(--font-fam-header);
+  color: var(--side-blue-color);
+  text-transform: uppercase;
+  line-height: 50%
+}
+
+.con .con-content .request .header h1 {
+  font-size: 2.5rem;
+  font-family: var(--font-fam-header);
+  color: var(--side-blue-color);
+}
+
+.con .con-content .request .header h1 span {
+  font-family: var(--font-fam-nonPrim);
+}
+
+.con .con-content .request .header p {
+  font-family: var(--font-fam-secondary);
+}
+
+.con .con-content form {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  font-family: var(--font-fam-secondary);
+}
+
+.con .con-content form .s-con {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.con .con-content form .s-con>div {
+  width: 48%;
+  height: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.con .con-content form .s-con>div label {
+  display: none;
+}
+
+.con .con-content form .s-con>div input {
+  width: 100%;
+  height: 90%;
+  padding: 0% 2%;
+  font-family: var(--font-fam-secondary);
+  border: none;
+  border-top: transparent 2px solid;
+  border-right: transparent 2px solid;
+  border-left: transparent 2px solid;
+  border-bottom: var(--side-blue-color) 2px solid;
+  transition: all 450ms ease;
+}
+
+.con .con-content form .s-con>div input:focus {
+  padding: 1% 5%;
+  height: 100%;
+  border-top: var(--side-blue-color) 2px solid;
+  border-right: var(--side-blue-color) 2px solid;
+  border-left: var(--side-blue-color) 2px solid;
+  border-bottom: var(--side-blue-color) 2px solid;
+  outline: none
+}
+
+.con .con-content form .comments-con {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.con .comments-con textarea {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-fam-secondary);
+  padding: 1%;
+  border: none;
+  border-top: var(--side-blue-color) 2px solid;
+  border-bottom: var(--side-blue-color) 2px solid;
+  border-right: transparent 2px solid;
+  border-left: transparent 2px solid;
+  outline: none;
+  transition: all 450ms ease;
+}
+
+.con .con-content form .comments-con textarea:focus {
+  border-top: var(--side-blue-color) 2px solid;
+  border-right: var(--side-blue-color) 2px solid;
+  border-left: var(--side-blue-color) 2px solid;
+  border-bottom: var(--side-blue-color) 2px solid;
+  outline: none
+}
+
+.con .con-content form .book {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.con .con-content form .book .n-con {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font-fam-secondary);
+}
+
+.con .con-content form .book .n-con label {
+  height: 40%;
+  font-size: 14px;
+}
+
+.con .con-content form .book .n-con input {
+  height: 60%;
+  width: 100%;
+  padding: 0 0px;
+  border: none;
+  border-top: var(--side-blue-color) 2px solid;
+  border-right: transparent 2px solid;
+  border-left: transparent 2px solid;
+  border-bottom: var(--side-blue-color) 2px solid;
+  font-family: var(--font-fam-secondary);
+  transition: all 450ms ease;
+}
+
+.con .con-content form .book .n-con input:focus {
+  padding: 0 3px;
+  border-top: var(--side-blue-color) 2px solid;
+  border-right: var(--side-blue-color) 2px solid;
+  border-left: var(--side-blue-color) 2px solid;
+  border-bottom: var(--side-blue-color) 2px solid;
+  outline: none
+}
+
+
+
+
+.con .con-content form .btn-con {
+  height: 25%;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.con .con-content form .btn-con button {
+  height: 90%;
+  width: 90px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+
+  background: var(--dark-blue-color);
+  color: #fff;
+}
+
+
+
+
+.con .con-content .location {
+  height: 95%;
+  width: 45%;
+  box-shadow: rgba(0, 0, 0, 0.46) 0px 6px 9px, rgba(0, 0, 0, 0.53) 0px 6px 9px;
+  background: var(--side-blue-color);
+}
+
+.con .con-content .location .con-loc-content {
+  height: 100%;
+  width: 100%;
+  padding: 9%;
+  display: flex;
+  flex-direction: column;
+}
+
+.con .con-content .location .con-loc-content .con-loc {
+  width: 100%;
+  color: #fff;
+  font-family: var(--font-fam-secondary);
+}
+
+.con .con-content .location .con-loc-content .con-loc h1 {
+  font-family: var(--font-fam-header);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.con .con-content .location .con-loc-content .loc {
+  height: 75%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.con .con-content .location .con-loc-content .loc p {
+  font-size: 14px;
+}
+
+.con .con-content .location .con-loc-content .loc iframe {
+  height: 75%;
+  width: 100%;
+}
+
+
+
+
+.con .con-content .location .con-loc-content .find-media {
+  height: 25%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.con .con-content .location .con-loc-content .find-media .social {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.con .con-content .location .con-loc-content .find-media .social h1 {
+  font-size: 16px;
+}
+
+.con .con-content .location .con-loc-content .find-media .social a {
+  margin-top: 5%;
+  font-size: 30px;
+  color: #fff;
+}
+
+.con .con-content .location .con-loc-content .find-media .talk {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.con .con-content .location .con-loc-content .find-media .talk h1 {
+  font-size: 16px;
+}
+
+.con .con-content .location .con-loc-content .find-media .talk h4,
+.con .con-content .location .con-loc-content .find-media .talk p {
+  font-size: 14px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+  .con {
+    height: 180%;
+    background: #fff;
+    padding: 0 7%;
+  }
+
+  .con .con-content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+
+  .con .con-content .request {
+    height: 45%;
+    width: 100%;
+    padding-right: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .con .con-content .location {
+    height: 50%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.46) 0px 6px 9px, rgba(0, 0, 0, 0.53) 0px 6px 9px;
+    background: var(--side-blue-color);
+  }
+
+}
+
+
+
+@media only screen and (max-width: 1450px) {
+  .con .con-content form .book .n-con {
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-height: 950px) and (max-width: 580px) {
+  .con {
+    height: 250%;
+    background: #fff;
+    padding: 0 2%;
+  }
+
+
+  .con .con-content .request {
+    height: 47%;
+    width: 100%;
+    padding-right: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .con .con-content form .btn-con {
+    height: 15%;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+
+  .con .con-content .location {
+    height: 50%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.46) 0px 6px 9px, rgba(0, 0, 0, 0.53) 0px 6px 9px;
+    background: var(--side-blue-color);
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .con {
+    height: 110%;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .con {
+    height: 115%;
+  }
+}
+
+@media only screen and (max-height:600px) {
+  .con {
+    height: 135%;
+  }
+}
+
+@media only screen and (max-height:500px) {
+  .con {
+    height: 155%;
+  }
+}
+
+@media only screen and (max-height:450px) {
+  .con {
+    height: 175%;
+  }
+}
+
+@media only screen and (max-height:400px) {
+  .con {
+    height: 185%;
+  }
+}
+
+@media only screen and (max-height:350px) {
+  .con {
+    height: 215%;
+  }
+}
+
+@media only screen and (max-height:300px) {
+  .con {
+    height: 235%;
+  }
+}

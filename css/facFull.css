@@ -1,0 +1,103 @@
+.fas-full-list {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  transform: translate(0%, 120%);
+
+  height: 30%;
+  width: 500px;
+  border-radius: 25px;
+  background: #fff;
+  padding: 2%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5%;
+
+  z-index: 9999999999999;
+}
+
+.fas-full-list.active {
+  animation: fasFullList 2500ms 100ms ease-in-out;
+}
+
+@keyframes fasFullList {
+  0% {
+    transform: translate(0%, 100%);
+  }
+
+  10% {
+    transform: translate(0%, 0%);
+  }
+
+  90% {
+    transform: translate(0%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, 100%);
+  }
+}
+
+.fas-full-list h1 {
+  width: 100%;
+  font-family: var(--font-fam-header);
+  /* border-top: 3px var(--side-blue-color) solid; */
+  border-bottom: 3px var(--side-blue-color) solid;
+}
+
+.fas-full-list p {
+  font-family: var(--font-fam-secondary);
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .fas-full-list {
+    position: fixed;
+    bottom: 5%;
+    right: 50%;
+    transform: translate(50%, 120%);
+
+    height: 30%;
+    width: 90%;
+    border-radius: 25px;
+    background: #fff;
+    padding: 3%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+
+    z-index: 9999999999999;
+  }
+
+  @keyframes fasFullList {
+    0% {
+      transform: translate(50%, 100%);
+    }
+
+    10% {
+      transform: translate(50%, 0%);
+    }
+
+    90% {
+      transform: translate(50%, 0%);
+    }
+
+    100% {
+      transform: translate(50%, 100%);
+    }
+  }
+}
+
+/* 
+Code made by Robert Bamba 
+https://github.com/Dreigannadoit
+*/

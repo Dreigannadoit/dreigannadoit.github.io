@@ -1,0 +1,180 @@
+.faq {
+  background: #fff;
+}
+
+.faq .faq-content {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+  padding: 0% 7%;
+}
+
+.faq .faq-content .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font-fam-header);
+  color: var(--side-blue-color);
+}
+
+.faq .faq-content .header h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.faq .faq-content .header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 3% 0;
+}
+
+.faq .faq-content .header p {
+  font-family: var(--font-fam-secondary);
+  color: #565656;
+
+}
+
+
+
+.faq .faq-content .accordian {
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-fam-secondary);
+}
+
+.faq .faq-content .accordian .block {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  border-radius: 15px;
+  border-top: 2px #000 solid;
+  border-bottom: 2px #000 solid;
+  margin-bottom: 1%;
+  padding: 3% 3% 3% 3%;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  transition: all 500ms ease-in-out;
+}
+
+.faq .faq-content .accordian .block.active {
+  height: 100px;
+}
+
+.faq .faq-content .accordian .block:nth-child(2).active,
+.faq .faq-content .accordian .block:nth-child(4).active {
+  height: 120px;
+}
+
+.faq .faq-content .accordian .block .top {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+
+  transition: all 500ms ease-in-out;
+}
+
+.faq .faq-content .accordian .block.active .top {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.faq .faq-content .accordian .block .top .question {
+  height: 100%;
+  width: 80%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.faq .faq-content .accordian .block .top .question h1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.faq .faq-content .accordian .block .top .open-block {
+  height: 100%;
+  width: 20%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  transition: all 500ms ease-in-out;
+}
+
+.faq .faq-content .accordian .block.active .top .open-block {
+  align-items: flex-start;
+}
+
+.faq .faq-content .accordian .block .top .open-block i {
+  transition: all 500ms ease-in-out;
+}
+
+
+.faq .faq-content .accordian .block .bottom {
+  height: 0%;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+  transition: all 500ms ease-in-out;
+}
+
+.faq .faq-content .accordian .block.active .bottom {
+  height: 80%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.faq .faq-content .accordian .block .bottom p {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 800px) {
+  .faq .faq-content .accordian {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-fam-secondary);
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .faq .faq-content .accordian {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-fam-secondary);
+  }
+
+  .faq .faq-content .accordian .block .top .question {
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+/* 
+Code made by Robert Bamba 
+https://github.com/Dreigannadoit
+*/

@@ -1,0 +1,502 @@
+.find {
+  height: 90%;
+  background: var(--bg-blue-color);
+}
+
+.find-content {
+  height: 100%;
+  width: 100%;
+  padding: 4% 7%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.find-content .header {
+  height: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.find-content .header h1 {
+  font-family: var(--font-fam-header);
+  font-size: 2.5rem;
+
+  color: var(--side-blue-color);
+}
+
+.find-content .header p {
+  font-family: var(--font-fam-secondary);
+}
+
+.find-content .cards {
+  height: 80%;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  font-family: var(--font-fam-secondary);
+
+}
+
+.find-content .cards .r-card {
+  height: 100%;
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3%;
+}
+
+
+.find-content .cards .r-card img {
+  height: 10%;
+  width: 100%;
+}
+
+
+.find-content .cards .r-card .rating {
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 1%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20%;
+}
+
+.find-content .cards .r-card .rating h3 {
+  height: 10%;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #767676;
+}
+
+.find-content .cards .r-card .rating .score {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.find-content .cards .r-card .rating .score h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.find-content .cards .r-2 .rating .score h1,
+.find-content .cards .r-3 .rating .score h1 {
+  height: 100%;
+  width: inherit !important;
+  background-color: var(--highlight-blue-color);
+  border-radius: 7px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-content .cards .r-card .rating .score h1 span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #3e3e3e;
+}
+
+.find-content .cards .r-card .rating .score img {
+  height: 30%;
+  width: 100%;
+}
+
+
+.find-content .cards .r-card .cat {
+  height: 50%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+
+.find-content .cards .r-card .cat .cat-bar {
+  height: 22%;
+  width: 100%;
+
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.find-content .cards .r-card .cat .cat-bar p {
+  height: 50%;
+  width: 100%;
+}
+
+.find-content .cards .r-card .cat .cat-bar .bar-container {
+  height: 50%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.find-content .cards .r-card .cat .cat-bar .bar-container .bar {
+  position: relative;
+  height: 100%;
+  width: 85%;
+  background: #D3D3D3;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.find-content .cards .r-card .cat .cat-bar .bar-container .bar::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: var(--side-blue-color);
+
+}
+
+.find-content .cards .r-3 .cat .cat-bar:nth-child(1) .bar-container .bar::before {
+  width: 88%;
+}
+
+.find-content .cards .r-3 .cat .cat-bar:nth-child(3) .bar-container .bar::before {
+  width: 88%;
+}
+
+.find-content .cards .r-3 .cat .cat-bar:nth-child(4) .bar-container .bar::before {
+  width: 88%;
+}
+
+
+.find-content .cards .r-card .cat .cat-bar .bar-container p {
+  height: 100%;
+  width: calc(100% - 85%);
+  text-align: right;
+}
+
+
+
+.find-content .cards .r-card .check-link {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.find-content .cards .r-card .check-link a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background: var(--dark-blue-color);
+  color: #fff;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+  .find {
+    height: 130%;
+    background: var(--bg-blue-color);
+  }
+
+  .find-content {
+    height: 100%;
+    width: 100%;
+    padding: 4% 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .find-content .header {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .find-content .cards {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    gap: 8%;
+    font-family: var(--font-fam-secondary);
+  }
+
+  .find-content .cards .r-card {
+    height: 55%;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .find {
+    height: 135%;
+    background: var(--bg-blue-color);
+  }
+
+  .find-content .cards .r-card {
+    height: 55%;
+    width: 35%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .find {
+    height: 135%;
+    background: var(--bg-blue-color);
+  }
+
+  .find-content .cards {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 2%;
+    font-family: var(--font-fam-secondary);
+  }
+
+  .find-content .cards .r-card {
+    height: 55%;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .find {
+    height: 135%;
+    background: var(--bg-blue-color);
+  }
+
+
+  .find-content .cards .r-card {
+    height: 55%;
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .find {
+    height: 180%;
+    background: var(--bg-blue-color);
+  }
+
+
+  .find-content .cards .r-card {
+    height: 35%;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .find {
+    height: 200%;
+    background: var(--bg-blue-color);
+  }
+
+  .find-content .header {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .find-content .cards {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 2%;
+    font-family: var(--font-fam-secondary);
+  }
+
+  .find-content .cards .r-card {
+    height: 35%;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .find {
+    height: 200%;
+    background: var(--bg-blue-color);
+  }
+
+
+  .find-content .cards .r-card {
+    height: 35%;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 4%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+  }
+}
+
+@media only screen and (max-height: 950px) and (max-width: 580px) {
+  .find-content .cards .r-card {
+    height: 35%;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 4%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+  }
+}
+
+
+@media only screen and (max-height: 730px) {
+  .find {
+    height: 150%;
+  }
+}
+
+@media only screen and (max-height: 650px) {
+  .find {
+    height: 200%;
+  }
+}
+
+@media only screen and (max-height: 480px) {
+  .find {
+    height: 240%;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .find {
+    height: 280%;
+  }
+}
+
+@media only screen and (max-height: 350px) {
+  .find {
+    height: 340%;
+  }
+}
+
+/* 
+Code made by Robert Bamba 
+https://github.com/Dreigannadoit
+*/

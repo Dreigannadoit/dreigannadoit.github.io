@@ -1,57 +1,177 @@
+/* 
+Code made by Robert Bamba 
+https://github.com/Dreigannadoit
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --bg-color: rgba(23, 27, 39, 1);
-  --bg-color-transparent: rgba(4, 24, 63, 0.5);
-  --bg-color-secondary: rgb(240, 248, 255);
-  --bg-color-secondary-invis: rgba(240, 248, 255, 0.5);
-  --bg-color-main: rgba(0, 196, 255, 1);
-  --bg-color-main-gradient: linear-gradient(50deg, rgba(48, 162, 255, 1) 27%, rgba(0, 196, 255, 1) 63%);
-  ;
-  --font-color-secondary: rgb(80, 80, 80);
-  --bg-button: rgb(239, 94, 31);
-  --font-fam-header: 'Cormorant Garamond', serif;
-  --font-fam-header-second: 'Libre Baskerville', serif;
-  --font-fam-normalText: 'Wix Madefor Display', sans-serif;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
-body {
-  height: 100vh;
-  height: 100svh;
-  width: 100vw;
+:root {
+  /* color pallet */
+  --dark-blue-color: #03045E;
+  --side-blue-color: #0077B6;
+  --highlight-blue-color: #00B4D8;
+  --contrast-blue-color: #90E0EF;
+  --bg-blue-color: #CAF0F8;
+
+  --font-fam-header: 'Playfair Display', serif;
+  --font-fam-secondary: 'Montserrat', sans-serif;
+  --font-fam-nonPrim: 'Noto Serif', serif;
+}
+
+html,
+body,
+.wrapper,
+.content,
+section {
+  height: 100%;
+  width: 100%;
+}
+
+body,
+section {
   overflow-x: hidden;
-  background: var(--bg-color);
 }
 
-.wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
+body.active {
+  overflow: hidden;
 }
 
-.wrapper>.content {
-  position: relative;
+@media only screen and (max-height: 700px) and (max-width: 900px) {
+
+  html,
+  body,
+  .wrapper,
+  .content,
+  section {
+    height: 105%;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-height: 600px) and (max-width: 900px) {
+
+  html,
+  body,
+  .wrapper,
+  .content,
+  section {
+    height: 110%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 500px) and (max-width: 900px) {
+
+  html,
+  body,
+  .wrapper,
+  .content,
+  section {
+    height: 115%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 400px) and (max-width: 900px) {
+
+  html,
+  body,
+  .wrapper,
+  .content,
+  section {
+    height: 120%;
+    width: 100%;
+  }
+
+}
+
+
+.content::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+
+  background: var(--side-blue-color);
+  z-index: -5;
+}
+
+.content::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
+
+  background-image: url(../img/bg.jpg);
+  z-index: -1;
+  filter: grayscale(100%);
+  opacity: 0.025;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .content::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+
+    background: var(--side-blue-color);
+    z-index: -1;
+  }
+
 }
 
 section {
   position: relative;
-  height: 100%;
-  width: 100%;
 }
 
-.project,
-.contact {
-  background: var(--bg-color);
+
+#fb-con {
+  position: fixed;
+  bottom: 4%;
+  right: 4%;
+  transform: translateX(0%);
+
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+  background: var(--dark-blue-color);
+  border-radius: 100%;
+  overflow: hidden;
+
+  z-index: 99999999999999999;
+  transition: all 100ms ease;
+}
+
+#fb-con.hide {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+#fb-con a {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+
+  font-size: 30px;
+
 }
 
 

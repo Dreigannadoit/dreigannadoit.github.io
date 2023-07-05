@@ -1,0 +1,194 @@
+.gal {
+  height: 100%;
+  background: #fff;
+  padding: 0 7%;
+}
+
+.gal-container {
+  height: 100%;
+  width: 100%;
+  padding: 0 7%;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gal-container>h1 {
+  font-size: 2.5rem;
+  font-family: var(--font-fam-header);
+  color: var(--side-blue-color);
+
+  text-align: center;
+}
+
+.gal-container .stickers {
+  height: 55%;
+  width: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+.gal-container .stickers .big-photo {
+  height: 100%;
+  width: 49%;
+  overflow: hidden;
+}
+
+.gal-container .stickers .big-photo a {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gal-container .stickers .big-photo a img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 500ms ease;
+}
+
+.gal-container .stickers .big-photo a:hover img {
+  height: 110%;
+  width: 110%;
+
+}
+
+
+
+.gal-container .stickers .small-photo {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gal-container .stickers .small-photo .img-small {
+  height: 49%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.gal-container .stickers .small-photo .img-small a {
+  height: 100%;
+  width: 49%;
+  overflow: hidden;
+}
+
+.gal-container .stickers .small-photo .img-small a img {
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 500ms ease;
+}
+
+.gal-container .stickers .small-photo .img-small a:hover img {
+  height: 110%;
+  width: 110%;
+
+}
+
+
+
+.gal-container .btn-con {
+  height: 30px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.gal-container .btn-con button {
+  font-size: 15px;
+  font-family: var(--font-fam-secondary);
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 2px var(--side-blue-color) solid;
+}
+
+
+@media only screen and (max-width: 950px) {
+  .gal {
+    height: 180%;
+    background: #fff;
+    padding: 0 7%;
+  }
+
+  .gal-container .stickers {
+    height: 55%;
+    width: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .gal-container .stickers .big-photo {
+    height: 49%;
+    width: 100%;
+  }
+
+  .gal-container .stickers .big-photo a {
+    height: 100%;
+    width: 100%;
+  }
+
+  .gal-container .stickers .big-photo a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+
+  .gal-container .stickers .small-photo {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .gal-container .stickers .small-photo .img-small {
+    height: 49%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .gal-container .stickers .small-photo .img-small a {
+    height: 100%;
+    width: 49%;
+  }
+
+  .gal-container .stickers .small-photo .img-small a img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+/* 
+Code made by Robert Bamba 
+https://github.com/Dreigannadoit
+*/
